@@ -1,0 +1,230 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+/* Page Colors: Black , #d9c9b6 */
+
+.nav-bar{
+    background-color: black;
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+#dancebox-logo{
+    height: auto;
+    width: 8em;
+    margin-left: 2em;
+}
+.nav-items{
+    color: #d9c9b6;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-left: 10em;
+    justify-content: space-evenly;
+    gap: 5em;
+}
+#home:hover, #about-us:hover, #shop-our-boxes:hover, #search-dance-studios:hover, #sizing-charts:hover, #contact-us:hover, #refund-policy:hover, #search-dance-studios:hover{
+    text-decoration: underline;
+}
+.picture-text-content{
+    display: flex;
+}
+.welcome-text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 6em;
+    padding-right: 4em;
+    text-align: center;
+    align-items: center;
+}
+.welcome{
+    font-weight: 700;
+}
+
+.box-wrapper{
+    width: 200px;
+    height: 200px;
+    margin: 10% auto;
+    display: flex;
+    justify-content: right;
+}
+#dancebox-snapshot{
+    margin-left: 4em;
+}
+.box-area{
+    animation: animate 12s ease-in-out infinite;
+    transform-style: preserve-3d;
+    transform-origin: 100px 100px 0;
+}
+.box-area div{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+}
+.box-area .box1{
+    background-image: url(../images/danceboxmodern.jpg);
+    background-size: cover;
+    background-position: center center;
+    transform: translateZ(100px);
+}
+.box-area .box2{
+    background-image: url(../images/black\ leotard.jpg);
+    background-size: cover;
+    font-weight: 800;
+    text-align: center;
+    background-position: center center;
+    transform: rotateY(90deg) translateZ(100px);
+}
+.box-area .box3{
+    background-image: url(../images/ballet\ skirt.jpg);
+    image-orientation: flip;
+    background-size: cover;
+    font-weight: 800;
+    text-align: center;
+    background-position: center center;
+    transform: rotateY(-180deg) rotateX(-90deg) translateZ(100px);
+}
+.box-area .box4{
+    background-image: url(../images/blacktapshoes.jpg);
+    background-size: cover;
+    font-weight: 800;
+    text-align: center;
+    background-position: center center;
+    transform: rotateY(-180deg) rotateX(90deg) translateZ(100px);
+}
+.box-area .box5{
+    background-image: url(../images/TIGHTS\ variety\ pic.png);
+    background-size: cover;
+    font-weight: 800;
+    text-align: center;
+    background-position: center center;
+    transform: rotateY(-90deg) rotateX(90deg) translateZ(100px);
+}
+.box-area .box6{
+    background-image: url(../images/Jazz\ Shoes.jpeg);
+    background-size: cover;
+    font-weight: 800;
+    text-align: center;
+    background-position: center center;
+    transform: rotateX(-90deg) translateZ(100px);
+}
+@keyframes animate{
+    from,to{
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    16%{
+        transform: rotateY(-90deg);
+    }
+    33%{
+        transform: rotateY(-90deg) rotateZ(-90deg);
+    }
+    50%{
+        transform: rotateY(-90deg) rotateZ(-180deg);
+    }
+    66%{
+        transform: rotateY(-180deg) rotateX(90deg);
+    }
+    83%{
+        transform: rotateX(90deg);
+    }
+}
+.footnav{
+    background-color: black;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5em;
+    color: #d9c9b6;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+.foot-items{
+    color: #d9c9b6;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5em;
+}
+#facebook, #instagram{
+    width: 5em;
+}
+.carousel {
+  background: white;
+}
+.carousel-cell {
+  width: 25%;
+  height: 300px;
+  margin-right: 10px;
+  background: white;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+}
+#dance-with-me-logo, #njdf-logo, #Amp-tap-board-logo, #rhythm-logo, #cdn-logo, #behind-the-bar-logo, #tamiyas-logo, #deca-logo{
+  width: 300px;
+  height: 300px;
+}
+/*.partnering{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+*/
+#studios, #ourboxes{
+  color: white;
+  background-color: black;
+  padding: 1em 1em 1em 1em;
+  border-radius: 6px;
+  border: black;
+  font-weight: 600;
+}
+#studios:hover, #ourboxes:hover, #partnerbutton:hover{
+  color: black;
+  background-color: #d9c9b6;
+  transition: all 2sec ease;
+  transform: scale(1.1);
+}
+#partnerbutton{
+  color: white;
+  background-color: black;
+  padding: 1em 1em 1em 1em;
+  border-radius: 6px;
+  border: black;
+  font-weight: 600;
+}
+.partnering{
+  display: flex;
+  flex-direction: row;
+  gap: 12em;
+  justify-content: center;
+}
+.whoweare{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(..//images/beach\ ashleigh.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#outofbox,#nomore{
+  margin: 25%;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  text-align: right;
+  font-weight: 800;
+
+}
+body{
+  background-image: url(../images/background\ boxes\ tan.png);
+background-size: cover;
+}
