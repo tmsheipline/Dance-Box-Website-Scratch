@@ -16,14 +16,21 @@
         <ul class="nav-items">
             <li id="home">Home</li>
             <li id="about-us">About us</li>
-            <li id="shop-our-boxes">Shop Our! Boxes</li>
-            <li id="search-dance-studios">Search !!Dance Studios</li>
+            <li id="shop-our-boxes">Shop Our Boxes</li>
+            <li id="search-dance-studios">Search Dance Studios</li>
             <li id="sizing-charts">Sizing Charts</li>
         </ul>
 </nav>
 </head>
 <body>
 <main>
+    <div class="modal">
+        <a href="#" class="btn">Watch Video</a>
+        <div class="video-container">
+            <span class="close">&#10006</span>
+            <video src="../images/DanceBox.mp4" controls></video>
+        </div>
+    </div>
     <div class="picture-text-content">
         <div class="box-wrapper">
             <div class="box-area">
@@ -47,13 +54,19 @@
     <div class="whoweare">
         <p id="outofbox">An “out-of-the-box” idea for students, teachers, and parents. Everything a student needs to start dance class all within one box.
         </p>
+        <div class="danceboxx">
+        <img src="../images/Packlane_Snapshot for website 1.png" id="actualDancebox" alt="Sample DanceBox">
+        </div>
         <p id="nomore">No more worrying about going to multiple stores for leotards and trying to find the “perfect color tights”. We provide everything your dance student needs for class, shipped directly to your home.</p>
     </div>
     <div class="partnering">
         <h3 class="partnertext">Want to learn how you can bring an “out-of-the-box” experience to dance class?</h3>
+        <div>
         <button id="partnerbutton">Partner With Us</button>
-    </div>
+</div>
+</div>
     <section class="logo-carousel">
+        <p class="thanks">Thank you to all of our wonderful business partners!</p>
     <div class="carousel" data-flickity='{ "autoPlay": true }'>
         <div class="carousel-cell"><img src="../images/Dance with me Logo REAL.png" id="dance-with-me-logo" alt="Dance with Me Logo"></div>
         <div class="carousel-cell"><img src="../images/njdf logo REAL.png"  id="njdf-logo" alt="NJDF Logo"></div>
@@ -83,5 +96,6 @@
     </ul>
 </footer>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="../JS/index.js"></script>
 </body>
 </html>

@@ -172,21 +172,24 @@
   width: 300px;
   height: 300px;
 }
-/*.partnering{
+.partnering{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   text-align: center;
 }
-*/
-#studios, #ourboxes{
+
+#studios, #ourboxes, #partnerbutton{
   color: white;
   background-color: black;
   padding: 1em 1em 1em 1em;
   border-radius: 6px;
   border: black;
   font-weight: 600;
+}
+#studios{
+    margin-right: 0.6em;
 }
 #studios:hover, #ourboxes:hover, #partnerbutton:hover{
   color: black;
@@ -202,29 +205,78 @@
   border: black;
   font-weight: 600;
 }
+.partnertext,#outofbox{
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+}
 .partnering{
   display: flex;
-  flex-direction: row;
-  gap: 12em;
-  justify-content: center;
-}
-.whoweare{
-  display: flex;
-  justify-content: center;
   flex-direction: column;
-  background-image: url(..//images/beach\ ashleigh.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
+  gap: 1em;
+  justify-content: center;
 }
+
 #outofbox,#nomore{
   margin: 25%;
-  margin-top: 10%;
-  margin-bottom: 5%;
-  text-align: right;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
   font-weight: 800;
-
 }
-body {
-  background-image: url(../images/background\ boxes\ tan.png);
-background-size: cover;
+#nomore{
+    margin-bottom: 3em;
+}
+.thanks{
+    text-align: center;
+    font-weight: 600;
+    margin-top: 4em;
+}
+.btn{
+    text-decoration: none;
+    padding: 15px 40px;
+    background-color: #d9c9b6;
+    color: white;
+    border-radius: 40px;
+    box-shadow: 0 10px 40px;
+    margin-left: 40%;
+}
+.video-container{
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 1;
+    background-color: #d9c9b6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+.video-container .close{
+    position: absolute;
+    top: 10px; right: 25px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.video-container video{
+    width: 400px;
+    max-width: 800px;
+    transform: scale(0);
+    box-shadow: 0 20px 20px;
+    outline: none;
+    transition: all 0.3s;
+}
+.video-container.show{
+    pointer-events: all; opacity: 1;
+}
+.video-container.show video{ 
+    transform: scale(1);
+}
+.danceboxx{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
 }
