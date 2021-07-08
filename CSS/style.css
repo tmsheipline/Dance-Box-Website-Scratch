@@ -5,6 +5,8 @@
 }
 /* Page Colors: Black , #d9c9b6 */
 
+/* Home Page Style */
+
 .nav-bar{
     background-color: black;
     width: 100%;
@@ -27,6 +29,7 @@
 }
 #home:hover, #about-us:hover, #shop-our-boxes:hover, #search-dance-studios:hover, #sizing-charts:hover, #contact-us:hover, #refund-policy:hover, #search-dance-studios:hover{
     text-decoration: underline;
+    
 }
 .picture-text-content{
     display: flex;
@@ -280,3 +283,128 @@
     padding: 0;
     margin: 0;
 }
+/* About Us Style Below */
+
+.beachh{
+    display: flex;
+    justify-content: center;
+    margin-bottom:0;
+    align-items: center;
+    align-self: center;
+}
+.whatis{
+    text-align: center;
+    font-weight: 800;
+    margin-top: 3em;
+    margin-bottom: 0;
+}
+.abouttext{
+    text-align: center;
+    margin-left: 2em;
+}
+.allcontent{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 5em;
+}
+.boxescontent{
+    text-align: center;
+}
+/* Shop our Boxes Style below */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: open-sans, "sans-serif";
+  }
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  .card button:hover {
+    opacity: 0.7;
+  }
+  .first3products,.secondrowproducts{
+      display: flex;
+      flex-direction: row;
+      margin-top: 2em;
+      margin-bottom: 2em;
+  }
+.wtb,.etu,.cb,.wpy{
+    font-weight: 800;
+}
+.partnercontenttoflex{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+#partnerimage{
+    width: 500px;
+    height: auto;
+}
+.BYOTITLE{
+    font-weight: 800;
+}
+/* Refund Policy Style Below */
+.refundtext{
+    text-align: center;
+}
+.refundtitle{
+    font-weight: 800;
+}
+/* Studios Page Style Below */
+.partnerstudiocontent{
+    text-align: center;
+}
+.logopictures1,.logopictures2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#CDNLOGO,#DWMLOGO,#DECALOGO{
+    height: auto;
+    width: 400px;
+}
+#NJDFLOGO,#RHYTHMLOGO,#TAMIYASLOGO{
+    height: auto;
+    width: 400px;
+}
+.pds{
+    font-weight: 800;
+    margin-top: 2em;
+}
+/* Sizing Chart Page Style Below */
+.sizetitle{
+    text-align: center;
+    font-weight: 800;
+}
+.footsizingmodel{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 5em;
+    height: 400px;
+}
+#notsuretitle{
+    font-weight: 800;
+    text-decoration: underline;
+}
+.columncharts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* Contact Us Styles */
